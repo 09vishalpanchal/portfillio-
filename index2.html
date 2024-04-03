@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(24, 24, 62);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            list-style: none;
+            margin: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: rgb(243, 141, 141);
+            font-size: 1.4rem;
+        }
+        
+        .left {
+            font-size: 2rem;
+        }
+        /* section first */
+        
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+        
+        .leftsection {
+            /* background-color: red; */
+            width: 40%;
+            font-size: 50px;
+        }
+        
+        .rightsection {
+            /* background-color: red; */
+            width: 30%;
+        }
+        
+        .img {
+            width: 70%;
+        }
+        
+        #element {
+            color: red;
+        }
+        
+        .text-gray {
+            color: rgb(208, 188, 188);
+        }
+        
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        
+        hr {
+            border: 0;
+            height: 1.2px;
+            background-color: rgb(53, 53, 240);
+            margin: 40px 84px;
+        }
+        
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+        
+        .box {
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 60px 0px;
+            display: flex;
+        }
+        
+        .vertical {
+            height: 90px;
+            width: 2px;
+            background-color: white;
+            margin: 0 150px;
+        }
+        
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+        
+        .vertical-title {
+            position: relative;
+            top: 75px;
+        }
+        
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: grey;
+            font-size: 9px;
+        }
+        
+        footer {
+            background-color: rgb(8, 8, 38);
+            height: 233px;
+        }
+        
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-between;
+        }
+        
+        .footer ul {
+            list-style: none;
+        }
+        
+        .footer>div {
+            width: 123px;
+        }
+        
+        .footer-rights {
+            color: grey;
+            text-align: center;
+            font-size: 30px;
+            padding: 12px 0;
+        }
+        
+        .footer-image {
+            width: 20%;
+            margin-top: 20px;
+            gap: 20px;
+        }
+        /* --------------------------------------------------------------------------------------------------------------       */
+        /*media quary  */
+        
+        @media (max-width:375px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                background-color: rgb(0, 0, 33);
+                color: white;
+            }
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                background-color: rgb(24, 24, 62);
+            }
+            nav ul {
+                display: flex;
+                justify-content: center;
+            }
+            nav ul li {
+                list-style: none;
+                margin: 10px;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+            a:hover {
+                text-decoration: none;
+                color: rgb(222, 128, 28);
+                font-size: 1.0rem;
+            }
+            .left {
+                font-size: 20px;
+            }
+            .firstsection {
+                display: flex;
+                justify-content: space-around;
+                margin: 30px 0;
+            }
+            .leftsection {
+                /* background-color: red; */
+                width: 20%;
+                font-size: 15px;
+            }
+            .rightsection {
+                /* background-color: red; */
+                width: 10%;
+            }
+            .img {
+                width: 200%;
+            }
+            .text-gray {
+                color: rgb(208, 188, 188);
+            }
+            .secondsection {
+                max-width: 80vw;
+                margin: auto;
+                height: 80vh;
+            }
+            hr {
+                border: 0;
+                height: 1.2px;
+                background-color: rgb(53, 53, 240);
+                margin: 40px 84px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vishal's Portfillio</div>
+            <div class="right">
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Contact</li>
+                    </a>
+                    <a href="#">
+                        <li>Project</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name Is Vishal
+                <div>And I Am a </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Doenlode Resume</button>
+                    <button class="btn">Git hub</button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img class="img" src="file:///C:/Users/91827/OneDrive/Desktop/c%20programimg/DSC_0166.JPG">
+            </div>
+        </section>
+        <!-- second secttion -->
+        <hr>
+        <section class="secondsection">
+            <span class="text-grey">What I Have done so far </span>
+            <h1>Work Exprince</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html5-logo-png-transparent-5.png" alt="">
+                    <div class="vertical-title">HTML Developer</div>
+                    <div class="vertical-desc">
+                        i am good web deginer and i am work on last 6month
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css-3-logo.png" alt="">
+                    <div class="vertical-title">CSS Developer</div>
+                    <div class="vertical-desc">
+                        i am good web deginer and i am work on last 6month
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="JavaScript-Logo-2048x1280.png" alt="">
+                    <div class="vertical-title">JS Developer</div>
+                    <div class="vertical-desc">
+                        i am good web deginer and i am work on last 6month
+                    </div>
+
+
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="31-312155_c-programming-language-logo-hd-png-download.png" alt="">
+                    <div class="vertical-title">C/C++</div>
+                    <div class="vertical-desc">
+                        i am good web deginer and i am work on last 6month
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Vishal's developer Portfillio</h3>
+            </div>
+            <div class="footer-second">
+                <img class="footer-image" src="https://th.bing.com/th/id/R.af1159ea3dd22f4b3d84a87d869127b9?rik=iz68IEBoErXAHw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2finstagram-icon-png-instagram-icon-1600.png&ehk=%2bAo2wF7lgRZJrtXPe3ev37c8JDCD6NBcj%2fGufhuhjQE%3d&risl=&pid=ImgRaw&r=0"
+                    alt="">
+                <img class="footer-image" src="https://www.freeiconspng.com/uploads/facebook-logo-facebook-logo-9.png" alt="">
+                <img class="footer-image" src="https://pluspng.com/img-png/twitter-png-logo-twitter-high-quality-png-png-image-1867.png" alt="">
+                <img class="footer-image" src="https://pngimg.com/uploads/github/github_PNG68.png" alt="">
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>contact</li>
+                    </a>
+                    <a href="#">
+                        <li>project</li>
+                    </a>
+                </ul>
+
+            </div>
+
+
+        </div>
+        <div class="footer-rights">
+            vishal'sportfillio.com || All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Develpor', 'Video Editior', 'HTML', 'CSS', 'Web designer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
